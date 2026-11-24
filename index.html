@@ -2,10 +2,116 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Minha Página</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@Marcoufrr | Links</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #3b0707 0%, #140505 55%, #09090b 100%);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 45px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    .foto-perfil {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ef4444;
+      box-shadow: 0 0 22px rgba(239, 68, 68, 0.45);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .bio {
+      font-size: 0.98rem;
+      color: #e4e4e7;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .botao {
+      background-color: rgba(239, 68, 68, 0.1);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 16px 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    }
+
+    .botao:hover, .botao:active {
+      background-color: #dc2626;
+      border-color: #f87171;
+      color: #ffffff;
+      transform: scale(1.02);
+      box-shadow: 0 0 18px rgba(220, 38, 38, 0.55);
+    }
+
+    /* Destaque extra no botão da Twitch */
+    .botao-destaque {
+      background-color: rgba(220, 38, 38, 0.25);
+      border: 1px solid #ef4444;
+    }
+
+    footer {
+      margin-top: 45px;
+      font-size: 0.8rem;
+      color: #a1a1aa;
+    }
+  </style>
 </head>
 <body>
-  <h1>Olá, mundo!</h1>
-  <p>Meu site está no ar pelo GitHub Pages.</p>
+
+  <div class="container">
+    <!-- Foto de perfil (puxando do GitHub; troque 'marcoufrr' se seu user no GitHub for outro) -->
+    <img src="https://github.com" onerror="this.src='https://github.com'" alt="Foto de Perfil Marcoufrr" class="foto-perfil">
+    
+    <h1>@Marcoufrr</h1>
+    
+    <p class="bio">Opa, Faço lives quase todos os dias as 20:00</p>
+
+    <div class="links">
+      <a href="https://www.twitch.tv/marcoufrr" target="_blank" class="botao botao-destaque">🟣 Twitch (Lives às 20h)</a>
+      <a href="https://youtube.com/@marcoufrr" target="_blank" class="botao">🔴 YouTube</a>
+      <a href="https://www.tiktok.com/@marcoufrr" target="_blank" class="botao">🎵 TikTok</a>
+      <a href="https://www.instagram.com/marcoufrr" target="_blank" class="botao">📸 Instagram</a>
+    </div>
+
+    <footer>
+      @Marcoufrr
+    </footer>
+  </div>
+
 </body>
 </html>
